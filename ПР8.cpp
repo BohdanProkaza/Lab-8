@@ -28,12 +28,8 @@ void out_arr(int narr, double **arr){
 }	
 
 void find_darr(int narr, double **arr2, float *arr1){	
-	for(int i=0;i<narr;i++){
-		for(int j=0;j<=narr;j++){				
-			if(i==j){
-				arr1[i] = arr2[i][j];
-			}
-		}		
+	for(int i=0;i<narr;i++){			
+		arr1[i] = arr2[i][i];
 	}	
 }
 
